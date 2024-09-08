@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Result Form</title>
+		<style>
+			body{
+				background-image: url("https://media.npr.org/assets/img/2011/12/23/84105452_wide-2234b88cbd30ca723888d2aaa01432a4210d0650.jpg");
+				background-attachment: scroll;
+				background-size: 1000px auto;			
+			}
+			
+			h1{
+				text-align: center;
+				padding-top: 185px;
+				padding-left: 50px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form id="myform" action="/employee/getperson" method="post">
+		<div id="div-1" th:utext="${formHTML}">  
+		
+		</div>
+		</form>
+		
+	</body>
+</html>

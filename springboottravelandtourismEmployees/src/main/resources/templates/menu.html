@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			MenuBar
+		</title>
+		<style>
+			
+			body{
+				background-image: url("https://media.npr.org/assets/img/2011/12/23/84105452_wide-2234b88cbd30ca723888d2aaa01432a4210d0650.jpg");
+				background-attachment: scroll;
+				background-size: 1000px auto;			
+			}
+			
+			#div-7{
+				padding-left: 200px;
+			}
+			
+			#div-8{
+				padding-left: 200px;
+			}
+			
+			#div-3{
+				display: flex;
+				
+			}
+			
+			#div-4{
+				display: flex;
+			}
+			
+			#div-5{
+				padding-left: 200px;
+			}
+			
+			#div-6{
+				padding-left: 225px;
+			}
+			
+			#div-1{
+				padding-top: 35px;
+	
+				display: inline-block;
+			}
+			
+			h1{
+				padding-left: 400px;
+				color: red;
+			}
+			
+			input[type="submit"]{
+				background-color: darkgray;
+				color: white;
+				border-color:white;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		
+		<h1>TAJHOTELS</h1>
+		<div id="div-1">
+			<div>
+			<div id="div-7">
+		<div id="div-3">
+				
+		<div>
+		<input type="submit"  onclick="view()" value="ViewEmployeeDetails"/>
+		<br>
+		<br>
+		<input type="submit" value="UpdateEmployeeDetails"/>
+		<br>
+		<br>
+		<input type="submit" onclick="package()" value="AddBookingPackagesList"/>
+		<br>
+		<br><br><br><br>
+		<br>
+		</div>
+		
+		
+		<div id="div-5">
+		<input type="submit" value="UpdateSalarieForEmployees"/>
+		<br>
+		<br>
+		<input type="submit" value="ViewStcks"/>
+		<br>
+		<br>
+		<input type="submit" value="ViewAccounts"/>
+		<br>
+		<br>
+		</div>
+		
+		</div>
+		
+		</div>
+		
+		</div>
+		
+		
+		
+		<div>
+		
+		<div id="div-8">
+			
+		<div id="div-4">
+			
+		<div>
+		<input type="submit" value="ViewCustomerDetails"/>
+		<br>
+		<br>
+		<input type="submit" value="Calculator"/>
+		<br>
+		<br>
+		<input type="submit" value="Payment"/>
+		<br>
+		<br>
+		</div>
+		
+		
+		<div id="div-6">
+		<input type="submit" value="ContactUs"/>
+		<br>
+		<br>
+		<input type="submit" value="AboutUs"/>
+		<br>
+		<br>
+		<input type="submit"  onclick="vp()" value="viewPackages"/>
+		<br>
+		<br>
+		</div>
+		
+		</div>
+		
+		</div>
+		</div>
+		
+		</div>
+		
+		
+		<script>
+			function view(){
+				window.location.href="/employee/view";
+			}
+			
+			function package(){
+				window.location.href="/employee/package";
+			}
+			
+			function vp(){
+				window.location.href="/employee/viewpackage";
+			}
+		</script>
+		
+	</body>
+</html>

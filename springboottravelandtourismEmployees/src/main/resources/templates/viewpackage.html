@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration form</title>
+	</head>
+	
+		
+
+	
+	<style>
+		label{
+			text-align: left;
+			color: blue;	
+		}
+		
+		input[type="submit"]{
+			background-color: blue;
+			color: white;
+			border-color: blue;
+			border-radius:5px;
+		
+		}
+		
+		input[type="reset"]{
+			background-color: blue;
+			color: white;
+			border-color: blue;
+			border-radius: 5px;
+			
+		}
+		
+		#div-1{
+			
+			display:inline-block;
+			text-align: right;
+		}
+		#div-2{
+			text-align: center;
+		}
+		
+		#div-3{
+			text-align:center;
+			
+		}
+		
+		input{
+			text-align: right;
+		}
+		
+		h1{
+			color: goldenrod;
+		}
+		
+			
+			
+			
+	</style>
+	<body>
+		<div id="background-image" alt="Full Screen Image">
+		<div id="div-3">
+		<div id="div-2">
+			<div id="div-1">
+	
+		<div>
+			<img id="images">
+		</div>
+		
+		<script>
+			function loadimage(){
+				fetch('/employee/image')
+				.then(response=>response.blob())
+				.then(blob=>{
+					const url=URL.createObjectURL(blob)
+					document.getElementById('images').src=url;
+				})
+			}
+			
+			loadimage();
+		</script>
+	
+	</div>
+		<br>
+		<br>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+
+		
+	</body>
+</html>

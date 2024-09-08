@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	
+	<body>
+		<label th:text:"${id}"></label>
+		<label th:text:"${guide}"></label>
+		<img th:src="${image}">
+				
+		<script>
+			function loadimage(){
+				fetch('/employee/image')
+				.then(response=>response.blob())
+				.then(blob=>{
+					const url=URL.createObjectURL(blob)
+					document.getElementById('images').src=url;
+				})
+			}
+			
+			loadimage();
+		</script>
+	</body>
+</html>

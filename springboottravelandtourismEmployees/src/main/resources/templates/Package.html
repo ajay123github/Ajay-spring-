@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Package Form</title>
+		<style>
+			
+			body{
+				background-image: url("https://media.npr.org/assets/img/2011/12/23/84105452_wide-2234b88cbd30ca723888d2aaa01432a4210d0650.jpg");
+				background-attachment: scroll;
+				background-size: 1000px auto;			
+			}
+			
+			#div-1{
+				
+				display: inline-block;
+				text-align: right;
+			}
+			
+			#div-2{
+				text-align: center;
+				padding-top: 55px;
+			}
+			
+			
+			
+			input{
+				text-align: right;
+				
+			}
+			
+			label{
+				color:orangered;
+			}
+			
+			input[type="submit"]{
+				color: white;
+				background-color: blue;
+			}
+			
+			input[type="reset"]{
+				color:white;
+				background-color: blue;
+			}
+			
+			input[type="file"]{
+				padding-left: 30px;
+			}
+			
+			h1{
+				text-align: center;
+				padding-top: 30px;
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+		
+		<div>
+			<h1>PACKAGE FORM</h1>
+		</div>
+		
+		<div id="div-2">
+			
+		<div id="div-1">
+		
+		<form action="/employee/uploadpackage" method="post" enctype="multipart/form-data">
+			<label >Id:</label>
+			<input type="text" name="id" required/>
+			<br><br>
+			<label>Type:</label>
+			<input type="text" name="type" required/>
+			<br><br>
+			<label>Days:</label>
+			<input type="number" name="days" required/>
+			<br><br>
+			<label>Nights:</label>
+			<input type="number" name="nights" required/>
+			<br><br>
+			<label>Assistance:</label>
+			<input type="text" name="assistance" required/>
+			<br><br>
+			<label>service</label>
+			<input type="text" name="service" required/>
+			<br><br>
+			<lablel>specialoffer</lablel>
+			<input type="text" name="specialoffer" required/>
+			<br><br>
+			<lablel>Guide:</lablel>
+			<input type="text" name="guide" required/>
+			<br><br>
+			<label>packagetype:</label>
+			<input type="text" name="packagetype" required/>
+			<br><br>
+			<label>packagecost:</label>
+			<input type="number" name="packagecost" required/>
+			<br><br>
+			<label>Image:</label>
+			<input type="file" name="image" required/>
+			<br><br>
+			<input type="submit" value="upload"/>
+			<input type="reset" value="reset"/>
+		</form>
+		
+		</div>
+		
+		</div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration form</title>
+	</head>
+	
+		
+
+	
+	<style>
+		label{
+			text-align: left;
+			color: blue;	
+		}
+		
+		input[type="submit"]{
+			background-color: blue;
+			color: white;
+			border-color: blue;
+			border-radius:5px;
+		
+		}
+		
+		input[type="reset"]{
+			background-color: blue;
+			color: white;
+			border-color: blue;
+			border-radius: 5px;
+			
+		}
+		
+		#div-1{
+			
+			display:inline-block;
+			text-align: right;
+		}
+		#div-2{
+			text-align: center;
+		}
+		
+		#div-3{
+			text-align:center;
+			
+		}
+		
+		input{
+			text-align: right;
+		}
+		
+		h1{
+			color: goldenrod;
+		}
+		
+		table{
+			border:1px solid black;
+			border-collapse:collapse;
+			width:200%;
+		}	
+			
+		td{
+			border:1px solid black;
+			text-align: right;
+		}	
+		
+		th{
+			border:1px solid black;
+			text-align:center;
+			
+		}
+	</style>
+	<body>
+	<div>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Type</th>
+					<th>Days</th>
+					<th>Nights</th>
+					<th>Assistance</th>
+					<th>Service</th>
+					<th>SpecialOffer</th>
+					<th>Guide</th>
+					<th>PackageType</th>
+					<th>PackageCost</th>
+					<th>Image</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="pack:${packs}" >
+					<td th:text="${pack.id}"></td>
+					<td th:text="${pack.type}"></td>
+					<td th:text="${pack.days}"></td>
+					<td th:text="${pack.nights}"></td>
+					<td th:text="${pack.assistance}"></td>
+					<td th:text="${pack.service}"></td>
+					<td th:text="${pack.specialoffer}"></td>
+					<td th:text="${pack.guide}"></td>
+					<td th:text="${pack.packagetype}"></td>
+					<td th:text="${pack.packagecost}"></td>
+					
+				</tr>
+			</tbody>
+		</table>
+<div>
+	<img src="" id="image" width="100px" height="100px"/>
+</div>	
+
+<script>
+	function i1(){
+			fetch('/employee/viewpackageimage1')
+			.then(response=>response.blob())
+			.then(blob=>{
+				const url=URL.createObjectURL(blob);
+				document.getElementById('image').src=url
+			})
+		}
+	i1();
+		
+
+		
+	
+	
+</script>
+		
+	</body>
+</html>
