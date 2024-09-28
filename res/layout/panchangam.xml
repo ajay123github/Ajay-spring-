@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+          <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout1">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panchangamcard"
+        android:layout_width="155sp"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="10sp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/red">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/panchangamicon"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:src="@drawable/dateicon"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/panchangamtext"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:text="
+ఈ రోజు పంచాంగం"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/panchangammonthcard"
+        android:layout_width="155sp"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="10sp"
+        android:layout_toRightOf="@id/panchangamcard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/lightorange">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/panchangammonthicon"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:src="@drawable/monthdateicon"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/panchangammonthtext"
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:text="మాస పంచాంగం"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/layout2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/layout1">
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/rasipalamcard"
+                  android:layout_width="155sp"
+                  android:layout_height="wrap_content"
+                  app:cardElevation="5dp"
+                  app:cardCornerRadius="10sp"
+                  android:layout_marginLeft="5sp"
+                  android:layout_below="@id/panchangamcard"
+                  android:layout_marginTop="10sp"
+                  >
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:background="@color/yellow">
+
+                      <de.hdodenhof.circleimageview.CircleImageView
+                          android:id="@+id/rasipalamicon"
+                          android:layout_width="40dp"
+                          android:layout_height="60dp"
+                          android:src="@drawable/rasi"
+                          app:civ_border_width="2dp"
+                          app:civ_border_color="@color/white"
+                          android:background="@color/white"/>
+                      <TextView
+                          android:id="@+id/rasipalamtext"
+                          android:layout_width="90sp"
+                          android:layout_height="wrap_content"
+                          android:text="రాశి ఫలాలు"
+                          android:textColor="@color/white"
+                          android:textSize="20sp"
+                          android:textStyle="bold"
+                          android:layout_marginLeft="10sp"
+                          />
+
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/pandugacard"
+                  android:layout_width="155sp"
+                  android:layout_height="wrap_content"
+                  app:cardElevation="5dp"
+                  app:cardCornerRadius="10sp"
+                  android:layout_marginLeft="5sp"
+                  android:layout_toRightOf="@id/rasipalamcard"
+                  android:layout_below="@id/panchangamcard"
+                  android:layout_marginTop="10sp">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:background="@color/blue">
+
+                      <de.hdodenhof.circleimageview.CircleImageView
+                          android:id="@+id/pandugaicon"
+                          android:layout_width="40dp"
+                          android:layout_height="60dp"
+                          android:src="@drawable/pandaga"
+                          app:civ_border_width="2dp"
+                          app:civ_border_color="@color/white"
+                          android:background="@color/white"/>
+                      <TextView
+                          android:id="@+id/pandugatext"
+                          android:layout_width="100sp"
+                          android:layout_height="wrap_content"
+                          android:text="పాండుగలు శుభముహూర్తాలు"
+                          android:textColor="@color/white"
+                          android:textSize="16sp"
+                          android:paddingTop="5sp"
+                          android:textStyle="bold"
+                          android:layout_marginLeft="10sp"
+                          />
+
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+
+          </LinearLayout>
+
+          <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/pellicard"
+                    android:layout_width="155sp"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_below="@id/rasipalamcard"
+                    android:layout_marginTop="10sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/lightgreen">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/pelliicon"
+                            android:layout_width="40dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/pelli"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="@color/white"
+                            android:background="@color/white"/>
+                        <TextView
+                            android:id="@+id/pellitext"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:text="నిత్ర వివాహం"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/poojacard"
+                    android:layout_width="155sp"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_toRightOf="@id/panchangamcard"
+                    android:layout_below="@id/pandugacard"
+                    android:layout_marginTop="10sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/rose"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/poojaicon"
+                            android:layout_width="40dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/lakshmipooja"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="@color/white"
+                            android:background="@color/white"/>
+                        <TextView
+                            android:id="@+id/poojatext"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:text="శ్రీ లక్ష్మీ పూజ కథ"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10sp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+          <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/servicecard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pellicard"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            app:cardCornerRadius="10sp"
+            app:cardElevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:orientation="horizontal"
+                android:layout_margin="10sp">
+                <LinearLayout
+                    android:layout_width="55sp"
+                    android:layout_height="100sp"
+                    android:orientation="vertical"
+                    android:layout_margin="10sp">
+                    <ImageView
+                        android:id="@+id/computerrasiimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:src="@drawable/computerrasi"/>
+                    <TextView
+                        android:id="@+id/computerrasitext"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:text="కంప్యూటర్ జాతకం"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55sp"
+                    android:layout_height="100sp"
+                    android:orientation="vertical"
+                    android:layout_margin="10sp">
+                    <ImageView
+                        android:id="@+id/homamserviceimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:src="@drawable/homam"/>
+                    <TextView
+                        android:id="@+id/homamservicetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:text="Homam Service"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55sp"
+                    android:layout_height="100sp"
+                    android:orientation="vertical"
+                    android:layout_margin="10sp">
+                    <ImageView
+                        android:id="@+id/janmapathrikaimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:src="@drawable/birth"/>
+                    <TextView
+                        android:id="@+id/janmapathrikatext"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:text="జన్మ పత్రిక"
+                        android:textSize="10sp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="55sp"
+                    android:layout_height="100sp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10sp"
+                    >
+                    <ImageView
+                        android:id="@+id/jobimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="60sp"
+                        android:src="@drawable/jobs"/>
+                    <TextView
+                        android:id="@+id/jobtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:text="ఉద్యోగాలు"
+                        android:textSize="10sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+          <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/foodcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/servicecard"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    app:cardCornerRadius="10sp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/health"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ఆరోగ్య చిట్కాలు"
+                        android:textStyle="italic"
+                        android:layout_marginLeft="10sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/fruits"
+                        android:layout_width="match_parent"
+                        android:layout_height="120sp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginBottom="10sp"
+                        >
+                        <LinearLayout
+                            android:layout_width="55sp"
+                            android:layout_height="100sp"
+                            android:orientation="vertical"
+                            android:layout_margin="10sp">
+                            <ImageView
+                                android:id="@+id/fruitsimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:src="@drawable/fruits"/>
+                            <TextView
+                                android:id="@+id/fruitstext"
+                                android:layout_width="match_parent"
+                                android:layout_height="40sp"
+                                android:text="పండ్లు"
+                                android:gravity="center"
+                                android:textStyle="italic"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="55sp"
+                            android:layout_height="100sp"
+                            android:orientation="vertical"
+                            android:layout_margin="10sp">
+                            <ImageView
+                                android:id="@+id/vegetableimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:src="@drawable/vegetables"/>
+                            <TextView
+                                android:id="@+id/vegetabletext"
+                                android:layout_width="match_parent"
+                                android:layout_height="40sp"
+                                android:text="కూరగాయలు"
+                                android:textSize="10sp"
+                                android:textStyle="italic"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="55sp"
+                            android:layout_height="100sp"
+                            android:orientation="vertical"
+                            android:layout_margin="10sp">
+                            <ImageView
+                                android:id="@+id/leafimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:src="@drawable/leaf"/>
+                            <TextView
+                                android:id="@+id/leaftext"
+                                android:layout_width="match_parent"
+                                android:layout_height="40sp"
+                                android:text="ఆకు కూరలు"
+                                android:textStyle="italic"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="55sp"
+                            android:layout_height="100sp"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10sp"
+                            >
+                            <ImageView
+                                android:id="@+id/pulseimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="60sp"
+                                android:src="@drawable/pulses"/>
+                            <TextView
+                                android:id="@+id/pulsetext"
+                                android:layout_width="match_parent"
+                                android:layout_height="40sp"
+                                android:text="పప్పులు"
+                                android:gravity="center"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

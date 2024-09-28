@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FruitsActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_margin="20sp"
+            android:src="@drawable/leftarrow"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="పండ్లు"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_margin="20sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desrciptive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="విటమిన్లు మరియు ప్రోటీన్లు రెండింటినీ కలిగి ఉన్న పండ్లు"
+        android:textSize="22sp"
+        android:layout_margin="20sp"
+        android:gravity="center"
+        android:textColor="@color/lightgreen"
+        android:textStyle="bold"
+        android:layout_below="@id/heading"/>
+
+    <ImageView
+        android:id="@+id/fruits"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/fruitsgroup"
+        android:layout_below="@id/desrciptive"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fruits"
+        />
+
+</RelativeLayout>

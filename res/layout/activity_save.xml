@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/leftarrow"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="10sp">
+<LinearLayout
+    android:id="@+id/layoutmain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="date :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the date"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/monthtext"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="month :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the month"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/daytext"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="day :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the day"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/maasamtext"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="maasam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/maasam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the maasam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/ruthuvutext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ruthuvu :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/ruthuvu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the ruthuvu"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/yanamtext"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="yanam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/yanam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the yanam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/suryodhayamtext"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="suryodhayam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/suryodhayam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the suryodhayam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/suryasthamayamtext"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="day :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/suryasthamayam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the suryasthamayam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/thiditext"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="thidi :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/thidi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the thidi"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/nakshatramtext"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="day :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/nakshatram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the nakshatram"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/yogamtext"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="yogam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/yogam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the yogam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/karanamtext"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="karanam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/karanam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the karanam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/goodtimetext"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="good time :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/goodtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the goodtime"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/badtimetext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="badtime :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/badtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the badtime"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/rahukalamtext"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="rahukalam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/rahukalam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the rahukalam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/yamagandamtext"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="yamagandam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/yamagandam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the yamagandam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/varjamtext"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="varjam :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/varjam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the varjam"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp">
+        <TextView
+            android:id="@+id/amruthatimingstext"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="amruthatimings :"
+            android:textSize="24sp"/>
+        <EditText
+            android:id="@+id/amruthatimings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter the amruthatimings"
+            />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10sp">
+    <Button
+        android:id="@+id/save"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_marginLeft="90dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+</LinearLayout>
+</LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

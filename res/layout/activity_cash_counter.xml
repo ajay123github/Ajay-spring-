@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashCounterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/leftarrow"
+            android:layout_margin="10sp"/>
+
+        <TextView
+            android:layout_width="160sp"
+            android:layout_height="35sp"
+            android:text="
+నగదు కౌంటర్"
+            android:textStyle="bold"
+            android:layout_margin="10sp"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="10sp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Amount Tally"
+    android:textSize="19sp"
+    android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body"
+        android:layout_marginTop="10sp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:paddingLeft="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body1"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+              <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:id="@+id/x2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+            
+            <EditText
+                android:id="@+id/et_currency_2000"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_2000"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_total_2000"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/body4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:id="@+id/fivehundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="20sp"
+                android:gravity="right|end"/>
+
+            <TextView
+                android:id="@+id/x5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/et_currency_500"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_500"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_total_500"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/body5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:id="@+id/twohundred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="20sp"/>
+
+            <TextView
+                android:id="@+id/x200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/et_currency_200"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_200"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_total_200"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/body6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="20sp"/>
+
+            <TextView
+                android:id="@+id/x1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/et_currency_100"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_100"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_total_100"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/body7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:id="@+id/fifty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="30sp"/>
+
+            <TextView
+                android:id="@+id/x50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/et_currency_50"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_50"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_total_50"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/body8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:id="@+id/twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="30sp"/>
+
+            <TextView
+                android:id="@+id/x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/et_currency_20"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_20"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:id="@+id/et_total_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/body9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:id="@+id/ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="30sp"/>
+
+            <TextView
+                android:id="@+id/x10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/et_currency_10"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_10"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_total_10"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/body10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="40sp"/>
+
+            <TextView
+                android:id="@+id/xfive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="25sp"/>
+
+            <EditText
+                android:id="@+id/et_currency_5"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_total_5"
+                android:text="="
+                android:textSize="16sp"
+                android:paddingLeft="10sp"/>
+
+            <TextView
+                android:id="@+id/et_total_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10sp"
+                android:text="0"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/body12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/body2"
+            android:layout_marginTop="10sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coins"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:paddingLeft="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/body31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/body12"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/c10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+                <TextView
+                    android:id="@+id/cten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="30sp"/>
+
+                <TextView
+                    android:id="@+id/cxten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="25sp"/>
+
+                <EditText
+                    android:id="@+id/et_coin_10"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_totalcoin_10"
+                    android:text="="
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_totalcoin_10"
+                    android:text="0"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/body41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+                <TextView
+                    android:id="@+id/fivecoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="40sp"
+                    android:gravity="right|end"/>
+
+                <TextView
+                    android:id="@+id/cxfive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="30sp"/>
+
+                <EditText
+                    android:id="@+id/et_coins_5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_totalcoin_5"
+                    android:text="="
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_totalcoin_5"
+                    android:text="0"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/body51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+                <TextView
+                    android:id="@+id/twocoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="40sp"/>
+
+                <TextView
+                    android:id="@+id/cxtwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="25sp"/>
+
+                <EditText
+                    android:id="@+id/et_coin_2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_totalcoin_2"
+                    android:text="="
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_totalcoin_2"
+                    android:text="0"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/body61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+                <TextView
+                    android:id="@+id/onecoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="40sp"/>
+
+                <TextView
+                    android:id="@+id/cxone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="25sp"/>
+
+                <EditText
+                    android:id="@+id/et_coin_1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:paddingLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_totalcoin_1"
+                    android:text="="
+                    android:textSize="16sp"
+                    android:paddingLeft="10sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/et_totalcoin_1"
+                    android:text="0"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/totalsection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/totalsection"
+            android:layout_margin="10sp">
+            <LinearLayout
+                android:id="@+id/totalamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/amountequal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/totalamountequal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="25sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/totalnotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Notes"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/notesequal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="35sp"/>
+
+                <TextView
+                    android:id="@+id/totalnotesequal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="25sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/totalcoins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Coins"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/coinsequal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="38sp"/>
+
+                <TextView
+                    android:id="@+id/totalcoinsequal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="25sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:background="@color/lightgreen"
+            android:layout_margin="10sp"
+            />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            android:background="@color/black"
+            android:layout_margin="10sp"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
