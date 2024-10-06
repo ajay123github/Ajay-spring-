@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		
+		<script>
+			function addItem(){
+				const itemTemplate=`
+				
+				<div class="item">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" name="items[__index__].productName" required/><br>
+                  
+                    <label for="price">Price:</label>
+                    <input type="number" name="items[__index__].price" required/><br><br>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="items[__index__].quantity" required/><br>
+
+                </div>
+				
+				`;
+				
+			const itemCount = document.querySelectorAll('.item').length;
+            const newItem = itemTemplate.replace(/__index__/g, itemCount);  // Dynamically set the index
+
+            const container = document.getElementById('itemsContainer');
+            container.insertAdjacentHTML('beforeend', newItem);  // Insert new item fields
+        }
+				
+			
+		</script>
+	</head>
+	
+	<body>
+			<form action="/submitOrder" method="post">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required/><br><br>
+
+        <div id="itemsContainer">
+            <!-- Initial Item Layout -->
+            <div class="item">
+                <label for="productName">Product Name:</label>
+                <input type="text" name="items[0].productName" required/><br>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="items[0].quantity" required/><br>
+
+                <label for="price">Price:</label>
+                <input type="number" name="items[0].price" required/><br><br>
+            </div>
+        </div>
+
+        <button type="button" onclick="addItem()">Add Item</button><br><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+	</body>
+</html>
